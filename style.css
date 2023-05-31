@@ -1,0 +1,152 @@
+body,
+html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #3da8e6, #f2f2f2);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    margin: auto auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(252, 252, 252, 0);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 20px;
+    background-color: #3da8e6;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-group button:hover {
+    background-color: #2776a3fc;
+}
+
+/* Captcha styles */
+.captcha-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.captcha-modal {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.captcha-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 10px;
+}
+
+.captcha-image {
+    width: 100%;
+    height: auto;
+}
+
+.captcha-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.captcha-button {
+    margin-top: 10px;
+}
+
+#captchaContainer {
+    width: 300px; 
+    height: 300px; 
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captcha-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; 
+}
+
+.captcha-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.captcha-image.selected {
+    border: 2px solid #f00;
+}
+
+.captcha-result {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+#masterFolder {
+    display: none;
+  }
+  
